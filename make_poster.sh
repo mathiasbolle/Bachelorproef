@@ -21,7 +21,7 @@ fi
 ${container_cmd} build --tag bpimg \
   --file docker/Dockerfile .
 
-# build the thesis
+# build the proposal
 ${container_cmd} run --rm \
   --volume "$PWD":/bp"${mount_opts}" bpimg \
-  sh /bp/docker/render_thesis.sh bachproef
+  sh /bp/docker/render_thesis.sh poster
