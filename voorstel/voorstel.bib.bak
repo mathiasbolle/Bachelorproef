@@ -32,4 +32,20 @@ https://www.toolsqa.com/software-testing/performance-testing/},
   url    = {https://octoperf.com/blog/2020/04/08/asynchronous-api/},
 }
 
+@Article{Namachivayam2013,
+  author  = {NaveenKumar Namachivayam},
+  date    = {2013-05-19},
+  title   = {Load Testing Asynchronous requests with LoadRunner},
+  url     = {https://qainsights.com/load-testing-asynchronous-requests-with-loadrunner/},
+  urldate = {2022-12-05},
+}
+
+@Article{Aladev2021,
+  author  = {Roman Aladev},
+  date    = {2021-05-29},
+  title   = {How to Load Test Async Requests with JMeter},
+  url     = {https://www.blazemeter.com/blog/async-requests-jmeter#Getting},
+  urldate = {2022-12-05},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
