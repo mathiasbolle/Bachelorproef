@@ -1,50 +1,13 @@
 % Encoding: UTF-8
 
-@Article{Sharma2022,
-  author  = {Lakshay Sharma},
-  date    = {2021-07-07},
-  title   = {Performance Testing},
-  url     = {https://www.toolsqa.com/software-testing/performance-testing/},
-  urldate = {2022-11-28},
-  comment = {link naar de auteur: https://www.linkedin.com/in/lakshay-sharma-a4216312/
-
-
-https://www.toolsqa.com/software-testing/performance-testing/},
+@Article{,
+  title = {Appium},
+  url   = {http://appium.io/},
 }
 
-@Article{Maas2016,
-  author = {Jan Pascal Maas},
-  date   = {2016-01-25},
-  title  = {Synchronous vs. Asynchronous Programming},
-  file   = {:maas-async-slides.pdf:PDF},
-}
-
-@Article{Contributors2022,
-  author = {MDN Contributors},
-  date   = {2022-11-26},
-  title  = {200 OK},
-}
-
-@Article{Jenkins2022,
-  author = {Stephen Jenkins},
-  date   = {2022-06-22},
-  title  = {Asynchronous API Performance Testing with JMeter},
-  url    = {https://octoperf.com/blog/2020/04/08/asynchronous-api/},
-}
-
-@Article{Namachivayam2013,
-  author  = {NaveenKumar Namachivayam},
-  date    = {2013-05-19},
-  title   = {Load Testing Asynchronous requests with LoadRunner},
-  url     = {https://qainsights.com/load-testing-asynchronous-requests-with-loadrunner/},
-  urldate = {2022-12-05},
-}
-
-@Article{Aladev2021,
-  author  = {Roman Aladev},
-  date    = {2021-05-29},
-  title   = {How to Load Test Async Requests with JMeter},
-  url     = {https://www.blazemeter.com/blog/async-requests-jmeter#Getting},
+@Article{,
+  title   = {UI Automator},
+  url     = {https://developer.android.com/training/testing/other-components/ui-automator},
   urldate = {2022-12-05},
 }
 
