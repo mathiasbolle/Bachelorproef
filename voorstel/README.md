@@ -1,5 +1,10 @@
-# LaTeX-sjabloon het bachelorproefvoorstel
+# Voorstel Bachelorproef
 
-Deze directory bevat het sjabloon voor je onderzoeksvoorstel. Het is gebaseerd op de documentclass [hogent-article](https://github.com/HoGentTIN/latex-hogent-article).
 
-**LET OP, DOE DIT EERST!** Hernoem het .tex-bestand `voorbeeld-bpvoorstel.tex` met je eigen naam: `FamilienaamVoornaam-bpvoorstel.tex`
+*verschillende frameworks* die UI Test automation mogelijk maken:
+- Espresso
+- UI Automator
+- Robolectric
+- Appium
+- Repeato (not open source!!)
+
