@@ -8,19 +8,15 @@
 \label{sec:introductie}
 
 % probleemstelling?
-Android gebruikers komen dagelijks gemiddeld met 10 apps per dag in contact \autocite{PANKO2018} . 
+Android gebruikers komen dagelijks gemiddeld met 10 apps per dag in contact \autocite{PANKO2018}. 
 Hierdoor is het belangrijk dat de applicaties op een correcte manier kunnen worden gebruikt zonder 
 dat er onverwachte fouten gebeuren. Denk bijvoorbeeld aan foute invoervalidatie of
 de applicatie die crashed door een onbekende reden.  % nog verder aanvullen
+Een oplossing hiervoor is door het maken van geautomatiseerde testen. Deze worden dan vaak in een CI/CD pipeline verwerkt zodat deze een 
+direct resultaat bieden bij de development lifecycle.
 % schokkerend feit?
-
-UI test automation helpt hierbij aangezien ze de user interface testen waar de gebruiker mee in contact komt.
-Volgens \textcite{Microfocus} heeft het gebruik van UI automation ook een aantal voordelen voor het bedrijf zelf.
-Een aantal voordelen hiervan zijn: % belangrijkste punten uitklaren
-\begin{itemize}
-\item 53.4 perc 
-\item nog iets
-\end{itemize}
+% nog meer kaderen van onderwerp?
+%TODO nog te gebruiken -> \autocite{Lin2020}
 
 
 %---------- Stand van zaken ---------------------------------------------------
@@ -34,14 +30,51 @@ Een aantal voordelen hiervan zijn: % belangrijkste punten uitklaren
 % \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
+UI test automation is niet enkel voordelig voor de gebruiker zelf die kwalitatieve software wilt gebruiken.
+Volgens \textcite{Microfocus} heeft het gebruik van UI automation ook een aantal voordelen voor het bedrijf zelf.
+Een aantal voordelen hiervan zijn verhoogde test coverage, testteam die verkleint door geautomatiseerde testen, 
+betere CI/CD, betere kwalitatieve software (minder bugs), \dots{}
+Dit heeft als conclusie dat test automation algemeen nog te weinig gebruikt wordt op de juiste manier in agile teams, vandaar dit onderzoek.
 
+% beschrijven van de frameworks (met bronnen)
+%- Espresso
+%- UI Automator
+%- Robolectric
+%- Appium
+%- Repeato (not open source!!)
+Espresso is gemaakt door Google. De focus van dit framework is volgens \textcite{Zakharov2013} gebaseerd op 3 peilers:
+gemakkelijk, betrouwbaar en Duurbaar. Gemakkelijk aangezien het de technische aspecten van android minimaliseerd en de focus ligt op de interacties met de gebruiker. Espresso is ook betrouwbaar aangezien het een default async task thread pool heeft. Als laatste is het framework ook duurbaar doordat de testen niet onderhevig zijn aan UI aanpassingen.
+Een testing tool die kan gebruikt worden met espresso is espresso test recorder. Dit is een tool die toelaat om UI testen te ontwikkelen door de acties te definiëren in de android app zelf \textcite{Google2022a}. Dit maakt het veel toegankelijker voor developers om testen te schrijven.
+
+Volgens \autocite{Zelenchuk} is het enkel mogelijk om android testen te schrijven in de test application context. Dit brengt een aantal beperkingen met zich mee wat UI Automator oplost door bijvoorbeeld de notification bar, camera of de settings applicatie de testen waar de applicatie direct of indirect gebruik van maakt. UI Automator kan gebruikt worden vanaf android versie 4.3.
+
+Naast Google zijn er een aantal open source frameworks die door de android-community zijn gemaakt. \textcite{Roboelectric2022} is een testing framework waar de focus ligt op snelheid van de test zodat test driven development kan toegepast worden. Doordat het framework eerder is gebaseerd op unit testing is het 10x sneller dan op een emulator maar geeft dit wel de toegang om via de android SDK UI acties te definieëren.
+
+\textcite{key1} is een multi-platform test automation framework en support zowel IOS als Android. Hierbij geeft het framework zelf een aantal programmeertalen ter beschikking dat kan gebruikt worden om onafhankelijk UI testen te definiëren. Dit doen ze door een specifieke API van het desbetreffende platform te gebruiken (voor android is dit UI Automator en Espresso).
+
+Repeato is een closed-source framework en net zoals Appium support dit framework verschillende platformen. De nadruk wordt hierbij gelegd op no-code en zorg ervoor dat dit een lage drempel geeft voor de business om UI testen te ontwikkelen.
 
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
 
+De framworks dat zullen vergeleken worden zijn Espresso, UI Automator, Robolectric, Appium en Repeato.
+Deze frameworks zullen vergeleken worden op volgende aspecten:
+\begin{itemize}
+	\item De uitvoeringstijd op de CI/CD pipeline.
+	\item De compatibiliteit met verschillende android versies.
+	\item De functionaliteit tov de UI testing frameworks die google gebruikt.
+	\item De rapportering van de frameworks.
+\end{itemize}
+
+Om deze aspecten te testen zal een in-house applicatie gebruikt worden van Brightest.
+Hier zullen dan verschillende test-scenario's voor worden opgesteld. Zoals het inloggen, de main functionaliteit van de applicatie.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
+
+De verwachting is dat afhankelijk van het criteria dat onderzocht wordt, verschillende resultaten zullen uitkomen.
+Als je op gebied van uitvoeringstijd voor de CI/CD gaat uitkomen zal RoboelElectric hier ongetwijfeld het beste uitkomen aangezien snelheid iets is waar het framework hard op focust. Op gebied van functionaliteit zullen de frameworks van Google zelf hier het beste uitkomen omdat deze door hetzelfde team zijn ontwikkeld als het besturingsysteem. Om te komen tot deze resultaten zal een PoC opgezet worden zoals beschreven in sectie \ref{sec:methodologie}.
+
 
