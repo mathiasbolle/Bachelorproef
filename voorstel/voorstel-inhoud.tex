@@ -21,6 +21,7 @@ direct resultaat bieden bij de development lifecycle.
 
 %---------- Stand van zaken ---------------------------------------------------
 
+
 \section{State-of-the-art}%
 \label{sec:state-of-the-art}
 
@@ -36,21 +37,22 @@ Een aantal voordelen hiervan zijn verhoogde test coverage, testteam die verklein
 betere CI/CD, betere kwalitatieve software (minder bugs), \dots{}
 Dit heeft als conclusie dat test automation algemeen nog te weinig gebruikt wordt op de juiste manier in agile teams, vandaar dit onderzoek.
 
+
 % beschrijven van de frameworks (met bronnen)
 %- Espresso
 %- UI Automator
 %- Robolectric
 %- Appium
 %- Repeato (not open source!!)
-Espresso is gemaakt door Google. De focus van dit framework is volgens \textcite{Zakharov2013} gebaseerd op 3 peilers:
-gemakkelijk, betrouwbaar en Duurbaar. Gemakkelijk aangezien het de technische aspecten van android minimaliseerd en de focus ligt op de interacties met de gebruiker. Espresso is ook betrouwbaar aangezien het een default async task thread pool heeft. Als laatste is het framework ook duurbaar doordat de testen niet onderhevig zijn aan UI aanpassingen.
+Het framework Espresso is ontwikkeld door Google. De focus van dit framework is volgens \textcite{Zakharov2013} gebaseerd op 3 peilers:
+gemakkelijk, betrouwbaar en Duurbaar. Gemakkelijk, aangezien het de technische aspecten van android minimaliseerd en de focus ligt op de interacties met de gebruiker. Espresso is ook betrouwbaar aangezien het een default async task thread pool heeft. Als laatste is het framework ook duurbaar doordat de testen niet onderhevig zijn aan UI aanpassingen.
 Een testing tool die kan gebruikt worden met espresso is espresso test recorder. Dit is een tool die toelaat om UI testen te ontwikkelen door de acties te definiëren in de android app zelf \textcite{Google2022a}. Dit maakt het veel toegankelijker voor developers om testen te schrijven.
 
-Volgens \autocite{Zelenchuk} is het enkel mogelijk om android testen te schrijven in de test application context. Dit brengt een aantal beperkingen met zich mee wat UI Automator oplost door bijvoorbeeld de notification bar, camera of de settings applicatie de testen waar de applicatie direct of indirect gebruik van maakt. UI Automator kan gebruikt worden vanaf android versie 4.3.
+Volgens \textcite{Zelenchuk} is het enkel mogelijk om android testen te schrijven in de test application context. Dit brengt een aantal beperkingen met zich mee wat UI Automator oplost door bijvoorbeeld de notification bar, camera of de settings applicatie te testen waar de applicatie direct of indirect gebruik van maakt. UI Automator kan gebruikt worden vanaf android versie 4.3.
 
-Naast Google zijn er een aantal open source frameworks die door de android-community zijn gemaakt. \textcite{Roboelectric2022} is een testing framework waar de focus ligt op snelheid van de test zodat test driven development kan toegepast worden. Doordat het framework eerder is gebaseerd op unit testing is het 10x sneller dan op een emulator maar geeft dit wel de toegang om via de android SDK UI acties te definieëren.
+Naast Google zijn er een aantal open source frameworks die door de android-community zijn gemaakt. \textcite{Roboelectric2022} is een testing framework waar de focus ligt op snelheid van de test zodat test driven development kan toegepast worden. Doordat het framework eerder is gebaseerd op unit testing is het tien keer sneller dan op een emulator maar geeft dit wel de toegang om via de android SDK UI acties te definieëren.
 
-\textcite{key1} is een multi-platform test automation framework en support zowel IOS als Android. Hierbij geeft het framework zelf een aantal programmeertalen ter beschikking dat kan gebruikt worden om onafhankelijk UI testen te definiëren. Dit doen ze door een specifieke API van het desbetreffende platform te gebruiken (voor android is dit UI Automator en Espresso).
+\textcite{key1} is een multi-platform test automation framework en support zowel IOS als Android. Hierbij geeft het framework zelf een aantal programmeertalen ter beschikking dat kan gebruikt worden om onafhankelijk UI testen te definiëren. Dit doen ze door een specifieke API van het desbetreffende platform te gebruiken, voor android is dit UI Automator en Espresso.
 
 Repeato is een closed-source framework en net zoals Appium support dit framework verschillende platformen. De nadruk wordt hierbij gelegd op no-code en zorg ervoor dat dit een lage drempel geeft voor de business om UI testen te ontwikkelen.
 
